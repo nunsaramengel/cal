@@ -21,10 +21,10 @@ const Calendar = () => {
   return (
     <TableContainer>
         <Heading>JANUAR</Heading>
-        <Table variant='simple'>
+        <Table variant='simple' colorScheme="orange">
             <Thead>
             <Tr>
-                {WEEKDAYS.de.map(day => <Th>{day}</Th>)}
+                {WEEKDAYS.de.map((day, index )=> <Th key={index}>{day}</Th>)}
             </Tr>
             </Thead>
             <Tbody>
@@ -74,7 +74,7 @@ const Calendar = () => {
                 <Tr>
                     <Th color="blue">140 Termine</Th>
                     <Th color="red">33 Absagen</Th>
-                    <Th isNumeric color="lightgreen">107 Stunden abgeschlossen</Th>
+                    <Th isNumeric color="lightgreengit ">107 Stunden abgeschlossen</Th>
                 </Tr>
             </Tfoot>
         </Table>

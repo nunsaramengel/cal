@@ -31,8 +31,8 @@ const Tabby = ({
             colorScheme={colorScheme}
         >
             <TabList>
-                {TAB_TITLES.de.map(item => (
-                    <Tab>{item}</Tab>
+                {TAB_TITLES.de.map((item, index) => (
+                    <Tab key={index}>{item}</Tab>
                 ))}
             </TabList>
 
